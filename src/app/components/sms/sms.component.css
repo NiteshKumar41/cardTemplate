@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.rightbody {
+  padding: 1rem;
+}
+.rightbody .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.rightbody button {
+  background-color: #ce4242;
+  border: none;
+  padding: 0.5rem;
+  color: white;
+}

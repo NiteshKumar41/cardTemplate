@@ -1,0 +1,41 @@
+<div class="bodymain" *ngIf="showParent">
+  <div class="heading">
+    <h2>Manage Templates</h2>
+  </div>
+  <div class="mainbody">
+    <div class="leftpart">
+      <button class="Active">SMS Template</button><br />
+      <button>Whatsapp Template</button>
+    </div>
+    <div class="rightpart">
+      <div class="rightbody">
+        <div class="heading">
+          <div>
+            <h4>SMS Template</h4>
+          </div>
+          <div>
+            <button class="headingbtn" (click)="createSms(true)">
+              Create SMS Template
+            </button>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="this.todos.length === 0; else elseBlock">
+        No Templates to display
+      </div>
+      <ng-template #elseBlock>
+        <div class="cardgrid">
+          <div *ngFor="let todo of todos">
+            <app-smsitems
+              [todo]="todo"
+              (smsDelete)="smsDelete($event)"
+            ></app-smsitems>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
+<div *ngIf="showChild">
+  <app-createsms (addTodo)="todoAdd($event)"></app-createsms>
+</div>

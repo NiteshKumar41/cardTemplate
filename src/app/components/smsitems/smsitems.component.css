@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#textcard {
+  background-color: rgb(227, 230, 238);
+  padding: 1rem;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+.bottom .upperbtn button {
+  margin-right: 0.5rem;
+  background-color: rgb(227, 230, 238);
+}
+.bottom button {
+  background-color: rgb(227, 230, 238);
+}
+#btn1 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  background-color: rgb(227, 230, 238);
+}

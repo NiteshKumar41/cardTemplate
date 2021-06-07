@@ -1,0 +1,113 @@
+<div class="bodymain">
+  <form (ngSubmit)="onSub()">
+    <div class="header">
+      <div class="heading">
+        <h3>Create SMS Template</h3>
+      </div>
+      <div class="btn">
+        <div class="text">
+          <h6>Auto saved <br />sec ago</h6>
+        </div>
+        <div class="savebtn">
+          <button (click)="onSub()">Save</button>
+        </div>
+      </div>
+    </div>
+    <div class="tempbody">
+      <div class="leftpart">
+        <div class="smsform">
+          <div class="formheading">
+            <h4>Editor</h4>
+          </div>
+          <div class="formbody">
+            <label>Message Name</label> <br />
+            <input
+              type="text"
+              class="name"
+              [(ngModel)]="title"
+              id="title"
+              [ngModelOptions]="{ standalone: true }"
+              required
+              maxlength="30"
+              minlength="2"
+            />
+            <br />
+            <div class="message">
+              <label>Message</label>
+              <a type="button">Add Tag</a>
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              required
+              [(ngModel)]="Message"
+              [ngModelOptions]="{ standalone: true }"
+            ></textarea
+            ><br />
+            <input type="checkbox" class="chk" />
+            <label for=""
+              >Use multi-part message (Recommended. Can use up to 3 sms) credit
+              per contact</label
+            >
+            <div class="note">
+              <h4>Note:</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                pariatur architecto? Assumenda eaque, omnis a corporis fugiat
+                nam et excepturi at consectetur sit exercitationem aliquam, quis
+                numquam doloremque, eum harum?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightpart">
+        <div class="sms">
+          <div class="smsheader">
+            <div class="smsheading">
+              <h4>SMS Preview</h4>
+            </div>
+            <div class="smsbtn">
+              <a type="button"> sent text sms</a>
+            </div>
+          </div>
+
+          <div class="smsbody">
+            <div class="smscard">
+              <div class="headersec">
+                <div class="toppart">
+                  <div class="time">9:58</div>
+                  <div class="icons">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <i class="fa fa-battery-full" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="bottompart">
+                  <div class="backicon">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </div>
+                  <h1>GU-545655</h1>
+                </div>
+              </div>
+              <div class="messagebody">
+                <div class="body">
+                  Text Meassage <br />
+                  Today 9:50
+                </div>
+                <div class="messagebox">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  animi doloribus similique mollitia rerum. Quas commodi eveniet
+                  libero blanditiis nostrum aspernatur, iusto perferendis ipsam?
+                  Similique praesentium hic impedit harum cumque.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #202b5c;
+}
+.bodymain {
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bodymain .header .btn {
+  display: flex;
+}
+
+.btn button {
+  max-height: 2rem;
+  margin-left: 0.8rem;
+  border: none;
+  background-color: brown;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.smsform {
+  border: 0.1rem solid lightgray;
+  height: 100%;
+}
+
+.formheading {
+  border-bottom: 0.1rem solid lightgray;
+}
+
+.formheading h4 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.formbody {
+  padding: 1rem;
+}
+
+.formbody label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.formbody .name {
+  margin-top: 0.5rem;
+  min-width: 50%;
+}
+
+.formbody textarea {
+  margin-top: 0.5rem;
+  min-width: 100%;
+}
+
+.formbody .message {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formbody .message a {
+  background-color: lightgray;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.formbody .message label {
+  padding-top: 0.4rem;
+}
+
+.formbody .note {
+  margin-top: 7rem;
+  padding: 1rem;
+  background-color: #f7f9fc;
+}
+
+.formbody .note h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.tempbody {
+  margin: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.sms {
+  border: 0.1rem solid lightgray;
+  height: 100%;
+}
+
+.smsheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.smsheader .smsheading h4 {
+  margin: 0rem;
+  padding: 0;
+}
+
+.smsheader .smsbtn a {
+  border: none;
+  background-color: lightgray;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.smsbody {
+  background-color: #f7f7f9;
+  padding: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.smscard {
+  background-color: white;
+}
+
+.smscard .toppart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.backicon {
+  margin-top: 1.5rem;
+  margin-right: 30%;
+}
+
+.bottompart {
+  display: flex;
+}
+
+.bottompart h1 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.headersec {
+  background-color: #e8ecf3;
+  padding: 0.5rem;
+}
+
+.smscard .body {
+  text-align: center;
+  color: grey;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.messagebody {
+  padding-bottom: 25%;
+}
+
+.messagebox {
+  background-color: #f2f2f2;
+  max-width: 50%;
+  margin-top: 15%;
+  margin-left: 5%;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 920px) {
+  .tempbody {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: none;
+    row-gap: 1rem;
+  }
+}
